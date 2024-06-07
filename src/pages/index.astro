@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import Linkedln from '../components/icons/Linkedln.astro';
+import SocialPill from '../components/SocialPill.astro';
+import GitHub from '../components/icons/GitHub.astro';
+import Mail from '../components/icons/Mail.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+---
+
+<Layout title="Portafolio de Deiviid - Desarrollador y Programador Web."
+description="Contrata a Deiviid para crear tu pagina web. Desarrolador Web y Creador de contenido. Especializado en la creacion de Paginas Web">
+	<main>
+		<SectionContainer class="py-44 pb-24">
+		<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+			Hey, soy Deiviid <a href="https://www.linkedin.com/in/deiviid/" class="flex justify-center items-center"><Badge>Disponible para trabajar</Badge></div></h1>
+				<h2 class="text-2xl opacity-80 text-wrap">
+					<span>Estudiante.</span> 
+					<span class="opacity-80">Apasionado por el desarrollo front-end y la creación de páginas web.</span> 
+					De Antofagasta, Chile.
+				</h2>
+				
+	
+		<nav class="flex gap-x-4 mt-8">
+			<SocialPill href="https://www.linkedin.com/in/deiviid/">
+				<Linkedln class="size-6"/>
+				Linkedln
+			</SocialPill>
+			<SocialPill href="https://github.com/Deiviidsito">
+				<GitHub class="size-6"/>
+				GitHub
+			</SocialPill>
+			<SocialPill href="mailto:david.alvarez.barraza@gmail.com">
+				<Mail class="size-6"/>
+				david.alvarez.barraza@gmail.com
+			</SocialPill>
+		</nav>
+		</SectionContainer>
+
+		<SectionContainer>
+			<h2 class="text-4xl font-semibold mb-10">Experiencia Laboral</h2>
+			<Experience />
+		</SectionContainer>
+	</main>
+</Layout>
